@@ -4,16 +4,16 @@ import PageHead from '../components/page-head';
 import Link from 'next/link';
 
 const headerProps = {
-  title: 'Home',
-  description: 'The Homepage!'
+  title: 'About Me',
+  description: 'About me! (Basically a CV / LinkedIn Profile)'
 };
 
 export default () => {
   return (
     <div className='container'>
       <PageHead {...headerProps} />
-      <h1>Home</h1>
-      <Link href='/about'><a>About</a></Link>
+      <h1>About</h1>
+      <Link href='/'><a>Home</a></Link>
       <br />
       <Link href='/portfolio'><a>Portfolio</a></Link>
     </div>
