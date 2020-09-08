@@ -10,7 +10,7 @@ const headerProps = {
 
 export default () => {
   return (
-    <div className='container'>
+    <div className='container is-fluid main'>
       <PageHead {...headerProps} />
       <h1>Home</h1>
       <Link href='/about'><a>About</a></Link>

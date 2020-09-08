@@ -1,0 +1,54 @@
+import React, { Fragment } from 'react';
+import PageHead from '../../components/page-head';
+
+import Link from 'next/link';
+
+const headerProps = {
+  title: 'CSS Playground',
+  description: 'CSS Playground'
+};
+
+export default () => {
+  return (
+    <Fragment>
+      <PageHead {...headerProps} />
+      <section className='hero is-danger is-bold is-fullheight-with-navbar mb-5'>
+        <div className='hero-body'>
+          <div className='container'>
+            <h1 className='title'>Playground | CSS</h1>
+            <h2 className='subtitle'>
+              Hero subtitle
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className='container is-fluid'>
+          <div id='columns' className='columns'>
+            <div className='column'>
+              <p>You, a bobsleder!? That I'd like to see!</p>
+              <p>Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head." I guess because my parents keep telling me to be more ladylike. As though! Are you crazy? I can't swallow that.</p>
+              <p>Well I'da done better, but it's plum hard pleading a case while awaiting trial for that there incompetence. Come, Comrade Bender! We must take to the streets! I've been there. My folks were always on me to groom myself and wear underpants. What am I, the pope?</p>
+            </div>
+            <div className='column has-text-danger'>
+              <p>I wish! It's a nickel. I wish! It's a nickel. For example, if you killed your grandfather, you'd cease to exist! Why not indeed! You'll have all the Slurm you can drink when you're partying with Slurms McKenzie!</p>
+              <p>For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. Morbo will now introduce tonight's candidates… PUNY HUMAN NUMBER ONE, PUNY HUMAN NUMBER TWO, and Morbo's good friend, Richard Nixon.</p>
+            </div>
+            <div className='column'>
+              <div id='buttons'>
+                <p><a className='button'>Normal Button</a></p>
+                <p><a className='button is-primary'>Primary Button</a></p>
+                <p><button className='button is-danger is-loading'>Loading Danger</button></p>
+              </div>
+            </div>
+            <div className='column'>
+              <div className='is-primary'>
+                <p>Shut up and get to the point! Yes, I saw. You were doing well, until everyone died. Pansy. And I'd do it again! And perhaps a third time! But that would be it. It doesn't look so shiny to me.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Fragment >
+  );
+};

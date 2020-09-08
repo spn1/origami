@@ -11,7 +11,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body>
+        <body className='has-navbar-fixed-top'>
           <Main />
           <NextScript />
         </body>
