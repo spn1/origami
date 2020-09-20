@@ -16,7 +16,7 @@ export default ({ children }) => (
       <meta name='description' content='The Personal Website of Spencer Newton - Portfolio, CV, Playground' />
       <meta name='og:description' content='The Personal Website of Spencer Newton - Portfolio, CV, Playground' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <meta charset='utf-8' />
+      <meta charSet='utf-8' />
       <link rel='icon' href='/favicon.ico' />
       <Scripts />
     </Head>
