@@ -1,4 +1,7 @@
 import React, { Fragment } from 'react';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
+
 import PageHead from '../components/page-head';
 
 const headerProps = {
@@ -13,16 +16,19 @@ export default () => {
       <section className='hero o-hero is-dark is-fullheight-with-navbar'>
         <div className='hero-body has-text-centered'>
           <div className='container'>
-            <div className='columns is-vcentered is-centered'>
-              <div className='column is-one-third'>
+            <div className='columns is-vcentered is-centered is-multiline'>
+              <div className='column is-one-third-desktop'>
                 <img src='images/react-icon.svg' />
               </div>
-              <div className='column has-text-left is-half'>
-                <h1 className='title is-size-1'>Spencer Newton</h1>
-                <h2 className='subtitle is-size-3'>
-                  Software Developer 👨🏻‍💻
-                </h2>
-                <p className='is-size-4'>👋 Hello there! I&apos;m a Software Developer currently living in Leeds. Feel free to check out the contents of this site, which includes a CV, a portfolio-of-sorts, a blog that I&apos;ll probably never update, and some secret areas you might be able to find ( ͡° ͜ʖ ͡°)</p>
+              <div className='column has-text-left-tablet has-text-center-mobile is-half-desktop is-two-thirds-tablet pr-5'>
+                <div className='content is-medium is-small-mobile'>
+                  <h1 className='title'>Spencer Newton</h1>
+                  <h2 className='subtitle'>👨🏻‍💻 Software Developer</h2>
+                  <p className='has-text-justified-mobile'>👋 Hello there! I&apos;m a Software Developer currently living in Leeds. Feel free to check out the contents of this site, which includes a CV, a portfolio-of-sorts, a blog that I&apos;ll probably never update, and some secret areas you might be able to find ( ͡° ͜ʖ ͡°)</p>
+                </div>
+              </div>
+              <div className='column is-full'>
+                <Icon icon={faChevronDown} size='2x' />
               </div>
             </div>
           </div>

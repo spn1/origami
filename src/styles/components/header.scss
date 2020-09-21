@@ -1,3 +1,7 @@
 .navbar {
   background-color: $theme-gradient-1;
+
+  .navbar-brand .navbar-item a {
+    color: $light;
+  }
 }
