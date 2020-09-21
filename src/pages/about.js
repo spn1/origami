@@ -13,9 +13,6 @@ export default () => {
     <div className='container'>
       <PageHead {...headerProps} />
       <h1>About</h1>
-      <Link href='/'><a>Home</a></Link>
-      <br />
-      <Link href='/portfolio'><a>Portfolio</a></Link>
     </div>
   );
 };

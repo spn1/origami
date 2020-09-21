@@ -1,15 +1,18 @@
 @import './bulma';
+@import 'images';
+@import 'typography';
+@import 'colors';
 @import './components/header';
+@import './components/footer';
+
 
 html,
 body {
   font-family: $family-primary;
 }
 
-p {
-  margin-bottom: 0.5em;
-}
-
-.main {
-  background-color: $code;
+.o-hero {
+  background: #ed4264; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ed4264, #ffedbc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ed4264, #ffedbc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

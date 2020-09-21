@@ -3,11 +3,15 @@ import Link from 'next/link';
 
 export default () => {
   return (
-    <nav className='navbar is-dark is-fixed-top' role='navigation' aria-label='main navigation'>
+    <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
       <div className='container'>
         <div className='navbar-brand'>
-          <div className='navbar-item'>
-            <Link href='/'><a className='has-text-white has-text-weight-bold'>S·N</a></Link>
+          <div className='navbar-item pb-0'>
+            <Link href='/'>
+              <a>
+                <img src='/images/logo.png' />
+              </a>
+            </Link>
           </div>
         </div>
         <div className='navbar-menu'>
