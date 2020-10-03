@@ -4,6 +4,7 @@
 @import 'colors';
 @import './components/header';
 @import './components/footer';
+@import './components/card';
 
 
 html,
@@ -12,7 +13,5 @@ body {
 }
 
 .o-hero {
-  background: #ed4264; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, $theme-gradient-1, $theme-gradient-2); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, $theme-gradient-1, $theme-gradient-2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @include theme-gradient();
 }

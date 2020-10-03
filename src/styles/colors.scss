@@ -30,5 +30,64 @@ $peach-yellow: #FFEDBC;
 $noon-to-dusk-pink: #ff6e7f;
 $noon-to-dusk-blue: #bfe9ff;
 
-$theme-gradient-1: $peach-red;
-$theme-gradient-2: $peach-yellow;
+// https://uigradients.com/#ALostMemory
+$lost-memory-red: #DE6262;
+$lost-memory-orange: #FFB88C;
+
+// https://uigradients.com/#MidnightCity
+$midnight-city-black: #232526;
+$midnight-city-grey: #414345;
+
+// https://webgradients.com
+$rare-wind-blue: #a8edea;
+$rare-wind-pink: #fed6e3;
+
+$wild-apple-pink: #d299c2;
+$wild-apple-yellow: #fef9d7;
+
+// Bliss
+$bliss-1: #f78ca0;
+$bliss-2: #f9748f;
+$bliss-3: #fd868c;
+$bliss-4: #fe9a8b;
+
+// Premium Dark
+$premium-dark-void: #000000;
+$premium-dark-midnight: #434343;
+
+// Japan Blush
+$japan-blush-pink: #faaca8;
+$japan-blush-purple: #ddd6f3;
+
+// Vicious Stance
+$vicious-stance-black-light: #485563;
+$vicious-stance-black-dark: #29323c;
+
+// Royal
+$royal-dark: #141e30;
+$royal-light: #243b55;
+
+// Custom Peach
+$custom-red: #ff5959;
+$custom-yellow: #ffe3b7;
+
+$theme-color-1: $custom-red;
+$theme-color-2: $custom-yellow;
+
+.is-theme-color-1 {
+  background: $theme-color-1;
+  color: $light;
+}
+
+.is-theme-color-2 {
+  background: $theme-color-2;
+  color: $dark;
+}
+
+@mixin theme-gradient() {
+  // background: #ed4264; /* fallback for old browsers */
+  background: -webkit-gradient(to bottom, $theme-color-1, 75%, $theme-color-2);
+  background: -moz-gradient(to bottom, $theme-color-1, 75%, $theme-color-2);
+  background: -ms-gradient(to bottom, $theme-color-1, 75%, $theme-color-2);
+  background: linear-gradient(to bottom, $theme-color-1, 75%, $theme-color-2);
+}

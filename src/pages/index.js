@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import PageHead from '../components/page-head';
 
@@ -34,27 +34,41 @@ export default () => {
           </div>
         </div>
       </section>
-      <section className='section is-primary'>
+      <section className='section is-theme-color-2'>
         <div className='container'>
           <div className='columns'>
 
             {/* About */}
-            <div className='column is-large'>
-              <div className='py-6'>
-                <h1 className='title'>About</h1>
-                <h2 className='subtitle'>
-                  aboooooot meeeeeee
-                </h2>
+            <div className='column is-narrow'>
+              <div className='card'>
+                <div className='card-image'>
+                  <figure className='image is-16by9'>
+                    <img src='/images/merry-2.jpg' alt='merry' />
+                  </figure>
+                </div>
+                <div className='card-content'>
+                  <h1 className='title'>About</h1>
+                  <h2 className='subtitle'>
+                    aboooooot meeeeeee
+                  </h2>
+                </div>
               </div>
             </div>
 
             {/* Portfolio */}
-            <div className='column has-text-right'>
-              <div className='py-6'>
-                <h1 className='title'>Portfolio</h1>
-                <h2 className='subtitle'>
-                  my stoopid apps
-                </h2>
+            <div className='column is-narrow has-text-right'>
+              <div className='card'>
+                <div className='card-image'>
+                  <figure className='image is-16by9'>
+                    <img src='/images/merry-1.jpg' alt='merry' />
+                  </figure>
+                </div>
+                <div className='card-content'>
+                  <h1 className='title'>Portfolio</h1>
+                  <h2 className='subtitle'>
+                    my stoopid apps
+                  </h2>
+                </div>
               </div>
             </div>
           </div>

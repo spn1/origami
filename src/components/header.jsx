@@ -5,7 +5,7 @@ import { faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
   return (
-    <nav className='navbar is-fixed-top' role='navigation' aria-label='main navigation'>
+    <nav className='navbar is-fixed-top is-theme-color-1' role='navigation' aria-label='main navigation'>
       <div className='container px-3'>
         <div className='navbar-brand'>
           <div className='navbar-item'>
