@@ -1,0 +1,6 @@
+@media(max-width: $desktop) {
+  .reverse-columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
