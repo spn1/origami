@@ -5,7 +5,6 @@
 @import 'columns';
 @import './components/header';
 @import './components/footer';
-@import './components/card';
 
 
 html,
@@ -18,25 +17,31 @@ body {
 
   .hero-divider {
     height: $size-7;
+
+    @include until($tablet) {
+      height: 0.5rem;
+      margin: 1rem 0;
+    }
   }
 
   .hero-title {
     font-size: 6rem;
 
     @include until($desktop) {
-      font-size: 4rem;
+      font-size: 6rem;
     }
 
     @include until($tablet) {
-      font-size: 2rem;
+      font-size: 4rem;
+      text-align: center;
     }
   }
 
   .hero-content {
-    font-size: 1.5rem;
+    font-size: 2rem;
 
-    @include until($tablet) {
-      font-size: 1rem;
+    @include until($desktop) {
+      font-size: 1.5rem;
     }
   }
 }
