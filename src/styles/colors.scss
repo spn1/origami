@@ -85,7 +85,7 @@ $theme-color-2: $custom-yellow;
 }
 
 @mixin theme-gradient() {
-  // background: #ed4264; /* fallback for old browsers */
+  background: $theme-color-1; /* fallback for old browsers */
   background: -webkit-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);
   background: -moz-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);
   background: -ms-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);

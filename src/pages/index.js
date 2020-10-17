@@ -38,7 +38,7 @@ export default () => {
 
               <div className='columns is-vcentered is-centered'>
                 <div className='column is-half'>
-                  <div className='box'>
+                  <div className='box' id='about-box'>
                     <h1 className='title'>About</h1>
                     <h2 className='subtitle'>
                       aboooooot meeeeeee
@@ -46,7 +46,7 @@ export default () => {
                   </div>
                 </div>
                 <div className='column is-half has-text-right'>
-                  <div className='box'>
+                  <div className='box' id='portfolio-box'>
                     <h1 className='title'>Portfolio</h1>
                     <h2 className='subtitle'>
                       my stoopid apps

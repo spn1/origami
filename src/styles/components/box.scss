@@ -1,0 +1,23 @@
+#about-box {
+    // @include theme-gradient();
+    background: $nelson-orange; /* fallback for old browsers */
+    background: -webkit-gradient(to bottom right, $velvet-sun-red, 50%, $velvet-sun-lime);
+    background: -moz-gradient(to bottom right, $velvet-sun-red, 50%, $velvet-sun-lime);
+    background: -ms-gradient(to bottom right, $velvet-sun-red, 50%, $velvet-sun-lime);
+    background: linear-gradient(to bottom right, $velvet-sun-red, 50%, $velvet-sun-lime);
+}
+
+#portfolio-box {
+    // @include theme-gradient();
+    background: $velvet-sun-lime; /* fallback for old browsers */
+    background: -webkit-gradient(to bottom right, $velvet-sun-lime, 50%, $velvet-sun-red);
+    background: -moz-gradient(to bottom right, $velvet-sun-lime, 50%, $velvet-sun-red);
+    background: -ms-gradient(to bottom right, $velvet-sun-lime, 50%, $velvet-sun-red);
+    background: linear-gradient(to bottom right, $velvet-sun-lime, 50%, $velvet-sun-red);
+}
+
+.box {
+    & .title, .subtitle {
+        color: $light
+    };
+}
