@@ -6,6 +6,8 @@
 @import './components/header';
 @import './components/footer';
 @import './components/box';
+@import './pages/home';
+@import './pages/about';
 
 
 html,
@@ -13,36 +15,15 @@ body {
   font-family: $family-primary;
 }
 
-.hero {
-  @include theme-gradient();
+// DEBUG STUFF
+.red {
+  border: 1px red solid;
+}
 
-  .hero-divider {
-    height: $size-7;
+.blue {
+  border: 1px blue solid;
+}
 
-    @include until($tablet) {
-      height: 0.5rem;
-      margin: 1rem 0;
-    }
-  }
-
-  .hero-title {
-    font-size: 6rem;
-
-    @include until($desktop) {
-      font-size: 6rem;
-    }
-
-    @include until($tablet) {
-      font-size: 4rem;
-      text-align: center;
-    }
-  }
-
-  .hero-content {
-    font-size: 2rem;
-
-    @include until($desktop) {
-      font-size: 1.5rem;
-    }
-  }
+.green {
+  border: 1px green solid;
 }

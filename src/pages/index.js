@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
-import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
 import PageHead from '../components/page-head';
+import Link from 'next/link';
 
 const headerProps = {
   title: 'Home',
@@ -36,22 +34,30 @@ export default () => {
 
               <hr className='hero-divider' />
 
-              <div className='columns is-vcentered is-centered'>
+              <div className='columns is-vcentered is-centered pt-4'>
                 <div className='column is-half'>
-                  <div className='box' id='about-box'>
-                    <h1 className='title'>About</h1>
-                    <h2 className='subtitle'>
-                      aboooooot meeeeeee
-                    </h2>
-                  </div>
+                  <Link href='/about'>
+                    <a>
+                      <div className='box' id='about-box'>
+                        <h1 className='title'>About</h1>
+                        <h2 className='subtitle'>
+                          aboooooot meeeeeee
+                        </h2>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
                 <div className='column is-half has-text-right'>
-                  <div className='box' id='portfolio-box'>
-                    <h1 className='title'>Portfolio</h1>
-                    <h2 className='subtitle'>
-                      my stoopid apps
-                    </h2>
-                  </div>
+                  <Link href='/about'>
+                    <a>
+                      <div className='box' id='portfolio-box'>
+                        <h1 className='title'>Portfolio</h1>
+                        <h2 className='subtitle'>
+                          my stoopid apps
+                        </h2>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
