@@ -1,7 +1,17 @@
 .about {
-    height: 100vh;
+    hr {
+        margin: 0.5rem 0;
+    }
 
     .box {
         border-radius: 0px;
+    }
+
+    .title {
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+        margin-bottom: 0.5rem;
     }
 }
