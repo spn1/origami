@@ -12,7 +12,7 @@ export default () => {
   return (
     <Fragment>
       <PageHead {...headerProps} />
-      <div className='container about pt-5'>
+      <div className='container about py-5'>
 
         <div className='columns'>
           <div className='column is-one-quarter-desktop is-one-third'>
@@ -27,10 +27,10 @@ export default () => {
                 <h2 className='subtitle is-5'>👨‍💻 Software Developer</h2>
               </div>
             </Box>
-            <Box className='box'>
-              <h1 className='title'>📚 Skills</h1>
+            <Box>
+              <h1 className='title'>Skills</h1>
               <hr />
-              <h2 className='subtitle'>Recent</h2>
+              <h2 className='subtitle has-text-info'>Recent</h2>
               <ul>
                 <li>
                   React, Node, Javascript
@@ -51,7 +51,7 @@ export default () => {
                   PaaS Systems (Cloud Foundry)
                 </li>
               </ul>
-              <h2 className='subtitle'>
+              <h2 className='subtitle has-text-info'>
                 History
               </h2>
               <ul>
@@ -63,10 +63,10 @@ export default () => {
                 </li>
               </ul>
             </Box>
-            <Box className='box'>
-              <h1 className='title'>🎮 Interests</h1>
+            <Box>
+              <h1 className='title'>Interests</h1>
               <hr />
-              <h2 className='subtitle'>
+              <h2 className='subtitle has-text-info'>
                 Professional
               </h2>
               <ul>
@@ -84,7 +84,7 @@ export default () => {
                 </li>
               </ul>
               <hr />
-              <h2 className='subtitle'>Personal</h2>
+              <h2 className='subtitle has-text-info'>Personal</h2>
               <ul>
                 <li>
                   Video Games
@@ -108,7 +108,7 @@ export default () => {
             </Box>
           </div>
           <div className='column is-three-quarters-desktop is-two-thirds'>
-            <Box className='box'>
+            <Box>
               <div className='content'>
                 <h1 className='title'>Profile</h1>
                 <hr />
@@ -119,11 +119,10 @@ export default () => {
                 </p>
               </div>
             </Box>
-            <Box className='box'>
+            <Box>
               <h1 className='title'>Experience</h1>
               <hr />
-              <Media sideContent={{ imgSrc: 'https://bulma.io/images/placeholders/64x64.png' }}>
-                <h2 className='subtitle'><span className='has-text-primary pr-3'>Sky</span>Software Developer</h2>
+              <Media side={{ imgSrc: '/icons/sky-logo-small-rgb-128x128.png' }} head={{title: 'Web Developer', titleExtra: '2018 - Present', subtitle: 'Sky'}}>
                 <ul>
                   <li>Full stack web development with React, Node, Javascript.</li>
                   <li>Developed systems to aid a variety of different &apos;expert users&apos; (e.g. Call centre agents, engineers, sales staff) within Sky in accessing help content and performing their role.</li>
@@ -134,8 +133,7 @@ export default () => {
                 </ul>
               </Media>
               <hr />
-              <Media sideContent={{ imgSrc: 'https://bulma.io/images/placeholders/64x64.png' }}>
-                <h2 className='subtitle'><span className='has-text-primary pr-3'>Credit Suisse</span>Junior Software Developer</h2>
+              <Media side={{ imgSrc: '/icons/credit-suisse-logo-256x256.png' }} head={{title: 'Junior .NET Developer', titleExtra: '2017 - 2018',  subtitle: 'Credit Suisse'}}>
                 <ul>
                   <li>Developed complex financial software using different technologies: C#, WCF, Excel, and SQL.</li>
                   <li>Worked on software provided by an external software company, and worked with the external team to request new features and report issues with the software.</li>
@@ -149,9 +147,8 @@ export default () => {
               </Media>
               <hr />
 
-              <Media sideContent={{ imgSrc: 'https://bulma.io/images/placeholders/64x64.png' }}>
-                <h2 className='subtitle'><span className='has-text-primary pr-3'>FDM Group</span>Junior Software Developer</h2>
-                <p>
+              <Media side={{ imgSrc: '/icons/fdm-logo-256x256.png' }} head={{title: 'Junior Software Developer', titleExtra: '2016 - 2018', subtitle: 'FDM Group'}}>
+                <p className='mb-1'>
                   The FDM Group Academy consists of 3 - 4 months of training, then 2 years of contractual based work at various different clients (Credit Suisse and Sky). The training courses that I partook in taught the following modules:
                 </p>
                 <ul>

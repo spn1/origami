@@ -1,8 +1,10 @@
 import React from 'react';
 
-export default ({ sideContent, mainContent, children }) => {
-  const { imgSrc } = sideContent;
-  // const { mainContentBody } = mainContent;
+const defaultImage = { imgSrc: 'https://bulma.io/images/placeholders/64x64.png' };
+
+export default ({ side = defaultImage, head = {}, children }) => {
+  const { imgSrc } = side;
+  const { title, titleExtra, subtitle } = head;
 
   console.log(imgSrc);
 
@@ -15,6 +17,8 @@ export default ({ sideContent, mainContent, children }) => {
       </figure>
       <div className='media-content'>
         <div className='content'>
+          <h2 className='subtitle has-text-info mb-0'>{title}<span className='is-pulled-right'>{titleExtra}</span></h2>
+          <h2 className='subtitle is-4 mt-1'>{subtitle}</h2>
           {children}
         </div>
       </div>
