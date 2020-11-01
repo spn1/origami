@@ -1,39 +1,57 @@
 .hero {
-    @include theme-gradient();
-  
-    .hero-divider {
-      height: $size-7;
-  
-      @include until($tablet) {
-        height: 0.5rem;
-        margin: 1rem 0;
-      }
+  @include theme-gradient();
+
+  .hero-divider {
+    height: $size-7;
+
+    @include until($tablet) {
+      height: 0.5rem;
+      margin: 1rem 0;
     }
-  
-    .hero-title {
+  }
+
+  .hero-title {
+    font-size: 6rem;
+
+    @include until($desktop) {
       font-size: 6rem;
-  
-      @include until($desktop) {
-        font-size: 6rem;
-      }
-  
-      @include until($tablet) {
-        font-size: 4rem;
-        text-align: center;
-      }
-    }
-  
-    .hero-content {
-      font-size: 2rem;
-  
-      @include until($desktop) {
-        font-size: 1.5rem;
-      }
     }
 
-    .box {
-      & .title, .subtitle {
-          color: $light
-      };
+    @include until($tablet) {
+      font-size: 4rem;
+      text-align: center;
+    }
   }
+
+  .hero-content {
+    font-size: 2rem;
+
+    @include until($desktop) {
+      font-size: 1.5rem;
+    }
   }
+
+  .box {
+    & .title, .subtitle {
+        color: $light
+    };
+  }
+}
+
+#about-box {
+  // @include theme-gradient();
+  background: $nelson-orange; /* fallback for old browsers */
+  background: -webkit-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
+  background: -moz-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
+  background: -ms-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
+  background: linear-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
+}
+
+#portfolio-box {
+  // @include theme-gradient();
+  background: $velvet-sun-lime; /* fallback for old browsers */
+  background: -webkit-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
+  background: -moz-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
+  background: -ms-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
+  background: linear-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
+}

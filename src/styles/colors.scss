@@ -86,8 +86,8 @@ $royal-light: #243b55;
 $custom-red: #ff5959;
 $custom-yellow: #ffe3b7;
 
-$theme-color-1: $custom-red;
-$theme-color-2: $custom-yellow;
+$theme-color-1: $midnight-city-black;
+$theme-color-2: $midnight-city-grey;
 
 .is-theme-color-1 {
   background: $theme-color-1;
@@ -96,13 +96,5 @@ $theme-color-2: $custom-yellow;
 
 .is-theme-color-2 {
   background: $theme-color-2;
-  color: $dark;
-}
-
-@mixin theme-gradient() {
-  background: $theme-color-1; /* fallback for old browsers */
-  background: -webkit-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);
-  background: -moz-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);
-  background: -ms-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);
-  background: linear-gradient(to bottom, $theme-color-1, 50%, $theme-color-2);
+  color: $light;
 }
