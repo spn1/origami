@@ -39,19 +39,19 @@
 }
 
 #about-box {
-  // @include theme-gradient();
-  background: $nelson-orange; /* fallback for old browsers */
-  background: -webkit-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
-  background: -moz-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
-  background: -ms-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
-  background: linear-gradient(to bottom right, $endless-river-turquoise, 50%, $endless-river-blue);
+  transition: all 1s ease;
+  background: $endless-river-blue;
+
+  &:hover {
+    background: $endless-river-turquoise;
+  }
 }
 
 #portfolio-box {
-  // @include theme-gradient();
-  background: $velvet-sun-lime; /* fallback for old browsers */
-  background: -webkit-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
-  background: -moz-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
-  background: -ms-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
-  background: linear-gradient(to bottom right, $compare-now-white, 50%, $compare-now-red);
+  transition: all 1s ease;
+  background: $lost-memory-red;
+
+  &:hover {
+    background: $lost-memory-orange;
+  }
 }
