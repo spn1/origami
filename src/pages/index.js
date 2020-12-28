@@ -11,7 +11,7 @@ export default () => {
   return (
     <Fragment>
       <PageHead {...headerProps} />
-      <section className='hero is-fullheight-with-navbar'>
+      <section className='hero hero-home is-fullheight-with-navbar'>
         <div className='hero-body'>
           <div className='container is-max-desktop has-text-light'>
             <div className='has-text-right'>
@@ -48,7 +48,7 @@ export default () => {
                   </Link>
                 </div>
                 <div className='column is-half has-text-right'>
-                  <Link href='/about'>
+                  <Link href='/portfolio'>
                     <a>
                       <div className='box' id='portfolio-box'>
                         <h1 className='title'>Portfolio</h1>
