@@ -2,6 +2,6 @@ import React from 'react';
 
 export default () => {
   return (
-    <div>Can&apost find page :(</div>
+    <div>Can&apos;t find page :(</div>
   );
 };

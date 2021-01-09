@@ -12,7 +12,7 @@ export default () => {
   return (
     <Fragment>
       <PageHead {...headerProps} />
-      <div className='container about py-5'>
+      <div className='container p-3'>
 
         <div className='columns'>
           <div className='column is-one-quarter-desktop is-one-third'>
