@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import { faFeatherAlt } from '@fortawesome/free-solid-svg-icons';
 
 export default () => {
   return (
@@ -11,7 +10,7 @@ export default () => {
           <div className='navbar-item'>
             <Link href='/'>
               <a>
-                <Icon icon={faFeatherAlt} size='lg' />
+                <Icon icon='home' size='lg' />
               </a>
             </Link>
           </div>
