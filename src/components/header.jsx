@@ -20,7 +20,7 @@ export default () => {
           <div className='navbar-end'>
             <div className='navbar-item is-uppercase has-text-weight-bold'><Link href='/about'><a className='has-text-white'>about</a></Link></div>
             <div className='navbar-item is-uppercase has-text-weight-bold'><Link href='/portfolio'><a className='has-text-white'>portfolio</a></Link></div>
-            <div className='navbar-item is-uppercase has-text-weight-bold'><Link href='/playground/css'><a className='has-text-white'>css</a></Link></div>
+            {/* <div className='navbar-item is-uppercase has-text-weight-bold'><Link href='/playground/css'><a className='has-text-white'>css</a></Link></div> */}
           </div>
         </div>
       </div>
