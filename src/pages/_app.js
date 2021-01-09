@@ -8,7 +8,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 import '../styles/app.scss';
 
-// Font Awesome Configuration
+// Font Awesome Configuration - https://stackoverflow.com/questions/44752189/how-to-add-font-awesome-to-next-js-project
 config.autoAddCss = false;
 library.add(faHome);
 
