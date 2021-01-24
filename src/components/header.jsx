@@ -3,16 +3,32 @@ import Link from 'next/link';
 import classnames from 'classnames';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 
-const NavbarItem = ({ href, text }) => (
+const NavbarIcon = ({ href, icon }) => (
+  <div className='navbar-item'>
+    <Link href={href}>
+      <a>
+        <Icon icon={icon} size='lg' />
+      </a>
+    </Link>
+  </div>
+);
+
+const NavbarItem = ({ href, text, onClick }) => (
   <div className='navbar-item is-uppercase has-text-weight-bold'>
     <Link href={href}>
-      <a className='has-text-white'>{text}</a>
+      <a className='has-text-white' onClick={onClick}>{text}</a>
     </Link>
   </div>
 );
 
 const NavbarBurger = ({ isActive, onClick }) => (
-  <a role='button' onClick={onClick} className={classnames('navbar-burger', { 'is-active': isActive })} data-target='navMenu' aria-label='menu' aria-expanded='false'>
+  <a
+    role='button'
+    onClick={onClick}
+    className={classnames('navbar-burger', { 'is-active': isActive })}
+    data-target='navMenu'
+    aria-label='menu'
+    aria-expanded='false'>
     <span aria-hidden='true'></span>
     <span aria-hidden='true'></span>
     <span aria-hidden='true'></span>
@@ -22,26 +38,21 @@ const NavbarBurger = ({ isActive, onClick }) => (
 export default () => {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
 
-  const burgerOnClick = () => { console.log('clicked borgar'); setIsMobileMenuActive(!isMobileMenuActive); };
+  const burgerOnClick = () => setIsMobileMenuActive(!isMobileMenuActive);
+  const linkOnClick = () => isMobileMenuActive && setIsMobileMenuActive(!isMobileMenuActive);
 
   return (
     <nav className='navbar is-fixed-top is-theme-color-1' role='navigation' aria-label='main navigation'>
       <div className='container px-3'>
         <div className='navbar-brand'>
-          <div className='navbar-item'>
-            <Link href='/'>
-              <a>
-                <Icon icon='home' size='lg' />
-              </a>
-            </Link>
-          </div>
+          <NavbarIcon href={'/'} icon='home' />
           <NavbarBurger onClick={burgerOnClick} isActive={isMobileMenuActive} />
         </div>
 
         <div className={classnames('navbar-menu', 'is-theme-color-1', { 'is-active': isMobileMenuActive})}>
           <div className='navbar-end'>
-            <NavbarItem href='/about' text='about' />
-            <NavbarItem href='/portfolio' text='portfolio' />
+            <NavbarItem href='/about' text='about' onClick={linkOnClick}/>
+            <NavbarItem href='/portfolio' text='portfolio' onClick={linkOnClick}/>
           </div>
         </div>
       </div>
