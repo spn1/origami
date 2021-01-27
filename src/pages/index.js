@@ -21,13 +21,13 @@ export default () => {
             </div>
             <hr className='hero-divider' />
             <div className='hero-content'>
-              <div className='columns is-vcentered reverse-columns'>
+              <div className='columns is-vcentered column-reverse-columns-tablet'>
                 <div className='column is-one-third-tablet is-half-mobile'>
                   <img src='images/react-icon.svg' />
                 </div>
                 <div className='column is-two-thirds-tablet'>
                   <div className='has-text-left'>
-                    <p className='has-text-justified-mobile'>👋 Hello there! I&apos;m a Software Developer currently living in Leeds. Feel free to check out the contents of this site, which includes a CV, a portfolio-of-sorts, a blog that I&apos;ll probably never update, and some secret areas you might be able to find ( ͡° ͜ʖ ͡°)</p>
+                    <p className='has-text-justified-mobile'>👋 Hey there! I&apos;m a Software Developer currently working & living in Leeds. I&apos;m not looking for carrer opportunities right now, but feel free to roam the site, which includes a CV, a portfolio-of-sorts, and other secret areas I use for coding practice 👀.</p>
                   </div>
                 </div>
               </div>
