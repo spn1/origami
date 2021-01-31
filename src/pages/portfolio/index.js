@@ -1,19 +1,16 @@
 import React, { Fragment } from 'react';
 import PageHead from '../../components/page-head';
 import HeroSection from '../../components/hero-section';
+import portfolioData from './portfolio-sections';
 
 const headerProps = {
   title: 'Portfolio',
   description: 'A portfolio of some of the software-related work I\'ve done in the past'
 };
 
-const textContent = [
-  'Finger Fort was a collaborative project that I started making with some friends from University. This was in 2015, after my final year at University, and was the first software project I worked on with a team.',
-  'The game was designed to be played on mobile devices, and the goal of the game is to defend your Fort on the right side of the screen from enemies that spawn from the left side and run towards it. The enemies spawn in waves, and each level is composed of a set number of waves. If they reach the fort, you lose a life - lose all your lives and it&apos;s game over.',
-  'The main method of defeating the enemies was to use the touch-screen to damage them in some way. This could include &apos;flicking&apos; them away, tapping away magical shields, or pressing down on the fuse of a bomb to stop it from damaging the castle. Personally, I found it very enjoyable to actually code the logic behind those sorts of game mechanics that previously I had only ever used in other games!',
-];
-
 export default () => {
+  console.log(Object.values(portfolioData));
+
   return (
     <Fragment>
       <PageHead {...headerProps} />
@@ -25,31 +22,18 @@ export default () => {
         </div>
       </section>
 
-      <HeroSection title={'Finger Fort'} textContent={textContent} isLeftAligned={false} isDark={true}/>
+      {Object.values(portfolioData).map(({title, textContent, imagePath}, index) => (
+        <HeroSection
+          key={index}
+          title={title}
+          textContent={textContent}
+          imagePath={imagePath}
+          isLeftAligned={index % 2 === 0}
+          isDark={index % 2 === 0}
+        />
+      ))}
 
-      {/* <div className='hero is-dark is-bold'>
-        <div className='hero-body'>
-          <section className='section'>
-            <div className='container is-max-fullhd'>
-              <div className='columns is-desktop is-variable is-8'>
-                <div className='column'>
-                  <figure className='image'>
-                    <img className='has-border-radius-small' src='/images/finger-fort-1.png' />
-                  </figure>
-                </div>
-                <div className='column content'>
-                  <h1 className='title has-text-light'>Finger Fort</h1>
-                  <p>Finger Fort was a collaborative project that I started making with some friends from University. This was in 2015, after my final year at University, and was the first software project I worked on with a team.</p>
-                  <p>The game was designed to be played on mobile devices, and the goal of the game is to defend your Fort on the right side of the screen from enemies that spawn from the left side and run towards it. The enemies spawn in waves, and each level is composed of a set number of waves. If they reach the fort, you lose a life - lose all your lives and it&apos;s game over.</p>
-                  <p>The main method of defeating the enemies was to use the touch-screen to damage them in some way. This could include &apos;flicking&apos; them away, tapping away magical shields, or pressing down on the fuse of a bomb to stop it from damaging the castle. Personally, I found it very enjoyable to actually code the logic behind those sorts of game mechanics that previously I had only ever used in other games!</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div> */}
-
-      <div className='hero is-light is-bold'>
+      {/* <div className='hero is-light is-bold'>
         <div className='hero-body'>
           <section className='section'>
             <div className='container is-max-fullhd'>
@@ -111,7 +95,7 @@ export default () => {
             </div>
           </section>
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

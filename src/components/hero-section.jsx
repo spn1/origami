@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-export default ({ title, textContent, isLeftAligned, isDark }) => (
+export default ({ title, textContent, imagePath, isLeftAligned, isDark }) => (
   <div className={classnames('hero is-bold', { 'is-dark': isDark })}>
     <div className='hero-body'>
       <section className='section'>
@@ -9,7 +9,7 @@ export default ({ title, textContent, isLeftAligned, isDark }) => (
           <div className={classnames('columns is-desktop is-variable is-8', { 'row-reverse-columns': isLeftAligned })}>
             <div className='column'>
               <figure className='image'>
-                <img className='has-border-radius-small' src='/images/finger-fort-1.png' />
+                <img className='has-border-radius-small' src={imagePath} />
               </figure>
             </div>
             <div className='column content'>
