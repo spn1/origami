@@ -40,18 +40,18 @@
 
 #about-box {
   transition: all 1s ease;
-  background: $endless-river-blue;
+  background: $cg-blue;
 
   &:hover {
-    background: $endless-river-turquoise;
+    background: $cyan-process;
   }
 }
 
 #portfolio-box {
-  transition: all 1s ease;
-  background: $lost-memory-red;
+  transition: all 0.25s ease;
+  background: $bittersweet;
 
   &:hover {
-    background: $lost-memory-orange;
+    background: $fire-opal;
   }
 }

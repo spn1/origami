@@ -1,11 +1,11 @@
 @mixin gradient($color-1, $color-2) {
-    background: $color-1; /* fallback for old browsers */
-    background: -webkit-gradient(to bottom, $color-1, 50%, $color-2);
-    background: -moz-gradient(to bottom, $color-1, 50%, $color-2);
-    background: -ms-gradient(to bottom, $color-1, 50%, $color-2);
-    background: linear-gradient(to bottom, $color-1, 50%, $color-2);
-  }
+  background: $color-1; /* fallback for old browsers */
+  background: -webkit-gradient(to bottom, $color-1, 50%, $color-2);
+  background: -moz-gradient(to bottom, $color-1, 50%, $color-2);
+  background: -ms-gradient(to bottom, $color-1, 50%, $color-2);
+  background: linear-gradient(to bottom, $color-1, 50%, $color-2);
+}
   
-  @mixin theme-gradient() {
-    @include gradient($theme-color-1, $theme-color-2)
-  }
+@mixin theme-gradient() {
+  @include gradient($theme-color-1, $theme-color-2)
+}

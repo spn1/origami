@@ -40,9 +40,6 @@ export default () => {
                     <a>
                       <div className='box' id='about-box'>
                         <h1 className='title'>About</h1>
-                        <h2 className='subtitle'>
-                          aboooooot meeeeeee
-                        </h2>
                       </div>
                     </a>
                   </Link>
@@ -52,9 +49,6 @@ export default () => {
                     <a>
                       <div className='box' id='portfolio-box'>
                         <h1 className='title'>Portfolio</h1>
-                        <h2 className='subtitle'>
-                          my stoopid apps
-                        </h2>
                       </div>
                     </a>
                   </Link>

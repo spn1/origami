@@ -66,6 +66,7 @@ export default () => {
               })}
             </Card>
           </div>
+
           <div className='column is-three-quarters-desktop is-two-thirds'>
             <Card>
               <div className='content'>
@@ -76,6 +77,7 @@ export default () => {
                 })}
               </div>
             </Card>
+
             <Card>
               <h1 className='title'>Experience</h1>
               <hr />
