@@ -16,7 +16,7 @@ const NavbarIcon = ({ href, icon }) => (
 const NavbarItem = ({ href, text, onClick }) => (
   <div className='navbar-item is-uppercase has-text-weight-bold'>
     <Link href={href}>
-      <a className='has-text-white' onClick={onClick}>{text}</a>
+      <a className='has-text-light' onClick={onClick}>{text}</a>
     </Link>
   </div>
 );

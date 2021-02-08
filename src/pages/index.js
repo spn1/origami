@@ -14,42 +14,44 @@ export default () => {
       <section className='hero hero-home is-fullheight-with-navbar'>
         <div className='hero-body'>
           <div className='container is-max-desktop has-text-light'>
-            <div className='has-text-right'>
-              <h1 className='hero-title has-text-weight-medium'>
+            <div>
+              <h1 className='hero-title has-text-centered has-text-weight-medium mb-7'>
                 Spencer Newton
               </h1>
             </div>
-            <hr className='hero-divider' />
+
             <div className='hero-content'>
-              <div className='columns is-vcentered column-reverse-columns-tablet'>
-                <div className='column is-one-third-tablet is-half-mobile'>
-                  <img src='images/react-icon.svg' />
-                </div>
-                <div className='column is-two-thirds-tablet'>
-                  <div className='has-text-left'>
-                    <p className='has-text-justified-mobile'>👋 Hey there! I&apos;m a Software Developer currently working & living in Leeds. I&apos;m not looking for carrer opportunities right now, but feel free to roam the site, which includes a CV, a portfolio-of-sorts, and other secret areas I use for coding practice 👀.</p>
+              <div className='columns is-vcentered column-reverse-columns-tablet mb-7'>
+                <div className='column is-four-quarters-tablet'>
+                  <div className='has-text-left has-text-weight-medium'>
+                    <p className='hero-text'>
+                      M.Phys <span className='is-cg-blue-light'>Space Science and Robotics Graduate</span>
+                    </p>
+                    <p className='hero-text'>
+                      Versatile <span className='is-fire-opal'>Software Developer</span>
+                    </p>
+                    <p className='hero-text'>
+                      Based in the <span className='is-peach-puff'>United Kingdom</span>
+                    </p>
                   </div>
                 </div>
+                <div className='column is-one-quarter-tablet is-half-mobile'>
+                  <img src='images/react-icon.svg' />
+                </div>
               </div>
-
-              <hr className='hero-divider' />
 
               <div className='columns is-vcentered is-centered pt-4'>
                 <div className='column is-half'>
                   <Link href='/about'>
-                    <a>
-                      <div className='box' id='about-box'>
-                        <h1 className='title'>About</h1>
-                      </div>
+                    <a className='has-text-light has-text-weight-medium is-3'>
+                      &lt; Find out more
                     </a>
                   </Link>
                 </div>
                 <div className='column is-half has-text-right'>
                   <Link href='/portfolio'>
-                    <a>
-                      <div className='box' id='portfolio-box'>
-                        <h1 className='title'>Portfolio</h1>
-                      </div>
+                    <a className='has-text-light has-text-weight-medium is-3'>
+                      See what I&apos;ve created &gt;
                     </a>
                   </Link>
                 </div>

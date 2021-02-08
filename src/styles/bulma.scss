@@ -10,5 +10,9 @@ $footer-padding: 1rem;
 $dark: $black-ter;
 $mobile: 540px;
 
+.mb-7 {
+    margin-bottom: 7rem !important;
+}
+
 // 4. Import the rest of Bulma
 @import "~bulma/bulma";

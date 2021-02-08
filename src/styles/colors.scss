@@ -86,11 +86,26 @@ $royal-light: #243b55;
 $custom-red: #ff5959;
 $custom-yellow: #ffe3b7;
 
-$bittersweet: #F29E4C;
-$fire-opal: #F1C453;
+// Pastel https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-ee6258
+$cg-blue-dark: #005E7A;
+$cg-blue-standard: #0081A7;
+$cg-blue-light: #009CCC;
 
-$cg-blue: #2C699A;
-$cyan-process: #048BA8;
+$verdigris-dark: #00888F;
+$verdigris-standard: #00AFB9;
+$verdigris-light: #00D5E0;
+
+$light-yellow-dark: #FCFAC5;
+$light-yellow-standard: #FDFCDC;
+$light-yellow-light: #FFFFFF;
+
+$peach-puff-dark: #FFC799;
+$peach-puff-standard: #FED9B7;
+$peach-puff-light: #FFF4EB;
+
+$fire-opal-dark: #EB3F33;
+$fire-opal-standard: #EE6258;
+$fire-opal-light: #F2857D;
 
 $theme-color-1: $midnight-city-black;
 $theme-color-2: $midnight-city-grey;
@@ -103,4 +118,20 @@ $theme-color-2: $midnight-city-grey;
 .is-theme-color-2 {
   background: $theme-color-2;
   color: $light;
+}
+
+.is-fire-opal {
+  color: $fire-opal-standard;
+}
+
+.is-cg-blue {
+  color: $cg-blue-standard;
+}
+
+.is-cg-blue-light {
+  color: $cg-blue-light;
+}
+
+.is-peach-puff {
+  color: $peach-puff-standard;
 }

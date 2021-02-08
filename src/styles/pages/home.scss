@@ -3,6 +3,7 @@
 
   .hero-divider {
     height: $size-7;
+    margin: 3rem 0;
 
     @include until($tablet) {
       height: 0.5rem;
@@ -11,7 +12,7 @@
   }
 
   .hero-title {
-    font-size: 6rem;
+    font-size: 8rem;
 
     @include until($desktop) {
       font-size: 6rem;
@@ -35,23 +36,5 @@
     & .title, .subtitle {
         color: $light
     };
-  }
-}
-
-#about-box {
-  transition: all 1s ease;
-  background: $cg-blue;
-
-  &:hover {
-    background: $cyan-process;
-  }
-}
-
-#portfolio-box {
-  transition: all 0.25s ease;
-  background: $bittersweet;
-
-  &:hover {
-    background: $fire-opal;
   }
 }
