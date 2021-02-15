@@ -86,7 +86,7 @@ $royal-light: #243b55;
 $custom-red: #ff5959;
 $custom-yellow: #ffe3b7;
 
-// Pastel https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-ee6258
+// Pastel 1 https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-ee6258
 $cg-blue-dark: #005E7A;
 $cg-blue-standard: #0081A7;
 $cg-blue-light: #009CCC;
@@ -110,6 +110,18 @@ $fire-opal-light: #F2857D;
 $theme-color-1: $midnight-city-black;
 $theme-color-2: $midnight-city-grey;
 
+// Pastel 2 https://coolors.co/dc6a6a-ffadad-ffd6a5-fdffb6-caffbf-70f3ff-70a7ff-bdb2ff-ffc6ff-fffffc
+$pastel-red: #DC6A6A;
+$pastel-orange: #FFD6A5;
+$pastel-yellow: #FDFFB6;
+$pastel-green: #CAFFBF;
+$pastel-blue: #70A7FF;
+$pastel-teal: #70F3FF;
+$pastel-violet: #BDB2FF;
+$pastel-pink: #FFADAD;
+$pastel-mauve: #FFC6FF;
+$pastel-cream: #FFFFFC;
+
 .is-theme-color-1 {
   background: $theme-color-1;
   color: $light;
@@ -120,18 +132,42 @@ $theme-color-2: $midnight-city-grey;
   color: $light;
 }
 
-.is-fire-opal {
-  color: $fire-opal-standard;
+.is-pastel-red {
+  color: $pastel-red;
 }
 
-.is-cg-blue {
-  color: $cg-blue-standard;
+.is-pastel-orange {
+  color: $pastel-orange;
 }
 
-.is-cg-blue-light {
-  color: $cg-blue-light;
+.is-pastel-yellow {
+  color: $pastel-yellow;
 }
 
-.is-peach-puff {
-  color: $peach-puff-standard;
+.is-pastel-green {
+  color: $pastel-green;
+}
+
+.is-pastel-blue {
+  color: $pastel-blue;
+}
+
+.is-pastel-teal {
+  color: $pastel-teal;
+}
+
+.is-pastel-violet {
+  color: $pastel-violet;
+}
+
+.is-pastel-pink {
+  color: $pastel-pink;
+}
+
+.is-pastel-mauve {
+  color: $pastel-mauve;
+}
+
+.is-pastel-cream {
+  color: $pastel-cream;
 }

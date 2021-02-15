@@ -1,11 +1,17 @@
 import React, { Fragment } from 'react';
 import PageHead from '../components/page-head';
+import ImageSwitcher from '../components/image-switcher';
 import Link from 'next/link';
 
 const headerProps = {
   title: 'Home',
   description: 'The Homepage!'
 };
+
+const techImages = [
+  'images/react-icon.svg',
+  'images/nodejs-icon.svg'
+];
 
 export default () => {
   return (
@@ -25,18 +31,18 @@ export default () => {
                 <div className='column is-four-quarters-tablet'>
                   <div className='has-text-left has-text-weight-medium'>
                     <p className='hero-text'>
-                      M.Phys <span className='is-cg-blue-light'>Space Science and Robotics Graduate</span>
+                      M.Phys <span className='is-pastel-blue'>Space Science and Robotics Graduate</span>
                     </p>
                     <p className='hero-text'>
-                      Versatile <span className='is-fire-opal'>Software Developer</span>
+                      Versatile <span className='is-pastel-red'>Software Developer</span>
                     </p>
                     <p className='hero-text'>
-                      Based in the <span className='is-peach-puff'>United Kingdom</span>
+                      Based in the <span className='is-pastel-yellow'>United Kingdom</span>
                     </p>
                   </div>
                 </div>
                 <div className='column is-one-quarter-tablet is-half-mobile'>
-                  <img src='images/react-icon.svg' />
+                  <ImageSwitcher images={techImages} interval={2}/>
                 </div>
               </div>
 

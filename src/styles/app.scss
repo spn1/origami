@@ -14,6 +14,10 @@ body {
   font-family: $family-primary;
 }
 
+.page-container {
+  min-height: 100vh;
+}
+
 // DEBUG STUFF
 .red {
   border: 1px red solid;
