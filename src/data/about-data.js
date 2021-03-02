@@ -52,9 +52,9 @@ export const data = {
             description: '',
             roles: [
                 'Full stack web development with React, Node, Javascript.',
-                'Developed systems to aid a variety of different \'expert users\' (e.g. Call centre agents, engineers, sales staff) within Sky in accessing help content and performing their role.',
-                'Implemented employee authentication for said \'expert users\' with Microsoft Azure Active Directory.',
-                'Developed REST APIs to store \'Expert User\' details using postgresql (e.g. New notifications, bookmarks, survey results).',
+                'Developed systems to aid a variety of different internal users within Sky in accessing help content and performing their role.',
+                'Implemented employee authentication for said internal users with Microsoft Azure Active Directory.',
+                'Developed REST APIs to store internal users details using postgresql (e.g. news notifications, bookmarks, survey results).',
                 'Worked in an Agile environment across multiple teams (Scrum / Kanban).',
                 'Relied upon to investigate and solve production issues and bugs.'
             ]
