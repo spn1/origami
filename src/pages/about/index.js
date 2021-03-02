@@ -3,7 +3,7 @@ import PageHead from '../../components/page-head';
 import Card from '../../components/card';
 import Media from '../../components/media';
 
-import data from './about-data';
+import { data } from '../../data/about-data';
 
 const headerProps = {
   title: 'About Me',

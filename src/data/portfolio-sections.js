@@ -1,4 +1,4 @@
-export default {
+export const sections = {
     'finger-fort': {
         title: 'Finger Fort',
         textContent: [

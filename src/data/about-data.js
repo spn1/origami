@@ -1,4 +1,4 @@
-export default {
+export const data = {
     aside: {
         avatar: {
             imgPath: '/images/boi-v2.jpg',

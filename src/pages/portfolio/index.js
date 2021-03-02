@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PageHead from '../../components/page-head';
 import HeroSection from '../../components/hero-section';
-import portfolioData from './portfolio-sections';
+import { sections } from '../../data/portfolio-sections';
 
 const headerProps = {
   title: 'Portfolio',
@@ -20,7 +20,7 @@ export default () => {
         </div>
       </section>
 
-      {Object.values(portfolioData).map(({title, textContent, imagePath}, index) => (
+      {Object.values(sections).map(({title, textContent, imagePath}, index) => (
         <HeroSection
           key={index}
           title={title}
