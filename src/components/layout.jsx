@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Scripts from './scripts';
 import Header from './header';
-import Footer from './Footer';
+import Footer from './footer';
 
 const metaTitle = 'Portfolio | Spencer Newton';
 
