@@ -1,10 +1,16 @@
 import React, { Fragment } from 'react';
 import PageHead from '../components/page-head';
+import ImageSlider from '../components/image-slider';
 
 const headerProps = {
   title: '404 - Page not found',
   description: 'This page does not exist'
 };
+
+const merryImages = [
+  '/images/merry-1.jpg',
+  '/images/merry-2.jpg'
+];
 
 export default () => {
   return (
@@ -18,7 +24,7 @@ export default () => {
       </section>
       <section className='section'>
         <div className='container'>
-          <img src='/images/merry-1.jpg' />
+          <ImageSlider images={merryImages} />
         </div>
       </section>
     </Fragment>

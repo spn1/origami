@@ -4,7 +4,7 @@ export default {
         textContent: [
             'Finger Fort was a collaborative project that I started making with some friends from University. This was in 2015, after my final year at University, and was the first software project I worked on with a team.',
             'The game was designed to be played on mobile devices, and the goal of the game is to defend your Fort on the right side of the screen from enemies that spawn from the left side and run towards it. The enemies spawn in waves, and each level is composed of a set number of waves. If they reach the fort, you lose a life - lose all your lives and it&apos;s game over.',
-            'The main method of defeating the enemies was to use the touch-screen to damage them in some way. This could include &apos;flicking&apos; them away, tapping away magical shields, or pressing down on the fuse of a bomb to stop it from damaging the castle. Personally, I found it very enjoyable to actually code the logic behind those sorts of game mechanics that previously I had only ever used in other games!',
+            'The main method of defeating the enemies was to use the touch-screen to damage them in some way. This could include \'flicking\' them away, tapping away magical shields, or pressing down on the fuse of a bomb to stop it from damaging the castle. Personally, I found it very enjoyable to actually code the logic behind those sorts of game mechanics that previously I had only ever used in other games!',
           ],
         imagePath: '/images/finger-fort-1.png'
     },

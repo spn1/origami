@@ -16,7 +16,7 @@ export default {
                 'PaaS Systems (Cloud Foundry)'
             ],
             'History': [
-                'C#, .Net, Unit',
+                'C#, .Net, Unity',
                 'C, C++, Java'
             ]
         },

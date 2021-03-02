@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PageHead from '../components/page-head';
-import ImageSwitcher from '../components/image-switcher';
+import ImageCrossfade from '../components/image-crossfade';
 import Link from 'next/link';
 
 const headerProps = {
@@ -9,8 +9,11 @@ const headerProps = {
 };
 
 const techImages = [
-  'images/react-icon.svg',
-  'images/nodejs-icon.svg'
+  '/images/react-icon.svg',
+  '/images/sass-icon.svg',
+  '/images/nodejs-icon.svg',
+  '/images/cs-icon.svg',
+  '/images/cpp-icon.svg',
 ];
 
 export default () => {
@@ -27,7 +30,7 @@ export default () => {
             </div>
 
             <div className='hero-content'>
-              <div className='columns is-vcentered column-reverse-columns-tablet mb-7'>
+              <div className='columns columns-stretch is-vcentered column-reverse-columns-tablet mb-7'>
                 <div className='column is-four-quarters-tablet'>
                   <div className='has-text-left has-text-weight-medium'>
                     <p className='hero-text'>
@@ -42,7 +45,9 @@ export default () => {
                   </div>
                 </div>
                 <div className='column is-one-quarter-tablet is-half-mobile'>
-                  <ImageSwitcher images={techImages} interval={2}/>
+                  <figure className='is-square crossfade-image'>
+                    <ImageCrossfade images={techImages} classNames={'crossfade-image'}/>
+                  </figure>
                 </div>
               </div>
 

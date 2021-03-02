@@ -1,0 +1,20 @@
+.absolute-center {
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.hide-loading-bar {
+    --loader-bar-height: 0px;
+}
+.crossfade-image {
+    $width: 140px;
+    height: 140px;
+    width: $width;
+
+    @include until($tablet) {
+        left: 0;
+        right: 0;
+        margin: auto
+    }
+}
