@@ -8,9 +8,8 @@
     --loader-bar-height: 0px;
 }
 .crossfade-image {
-    $width: 140px;
     height: 140px;
-    width: $width;
+    width: 140px;
 
     @include until($tablet) {
         left: 0;

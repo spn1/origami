@@ -45,7 +45,7 @@ export default () => {
                   </div>
                 </div>
                 <div className='column is-one-quarter-tablet is-half-mobile'>
-                  <figure className='is-square crossfade-image'>
+                  <figure className='crossfade-image'>
                     <ImageCrossfade images={techImages} classNames={'crossfade-image'}/>
                   </figure>
                 </div>
