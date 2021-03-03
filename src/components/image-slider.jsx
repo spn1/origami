@@ -10,8 +10,6 @@ export default ({ images }) => (
     play={true}
     cancelOnInteraction={false} // should stop playing on user interaction
     interval={3000}
-    organicArrows={false}
-    bullets={false}
   >
     {images.map((image, index) => <img key={index} src={image} data-src={image}/>)}
   </AutoplaySlider>

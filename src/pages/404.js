@@ -4,12 +4,22 @@ import ImageSlider from '../components/image-slider';
 
 const headerProps = {
   title: '404 - Page not found',
-  description: 'This page does not exist'
+  description: 'Could not find page'
 };
 
-const merryImages = [
+const dogImages = [
   '/images/merry-1.jpg',
-  '/images/merry-2.jpg'
+  '/images/merry-2.jpg',
+  '/images/merry-and-pippin-1.jpg',
+  '/images/merry-3.jpg',
+  '/images/merry-4.jpg',
+  // '/images/pippin-1.jpg',
+  '/images/merry-and-pippin-2.jpg',
+  '/images/merry-5.jpg',
+  '/images/merry-6.jpg',
+  // '/images/pippin-2.jpg',
+  '/images/merry-7.jpg',
+  '/images/merry-and-pippin-3.jpg'
 ];
 
 export default () => {
@@ -19,12 +29,12 @@ export default () => {
       <section className='section has-text-centered'>
         <div className='container'>
           <h1 className='title is-1'>404 - Page not found</h1>
-          <h2 className='subtitle is-3'>This page hasn't been created yet, but here is a picture of my dog:</h2>
+          <h2 className='subtitle is-3'>This page hasn&apos;t been created yet, but here are some pictures of my family dogs :)</h2>
         </div>
       </section>
       <section className='section'>
         <div className='container'>
-          <ImageSlider images={merryImages} />
+          <ImageSlider images={dogImages} />
         </div>
       </section>
     </Fragment>
