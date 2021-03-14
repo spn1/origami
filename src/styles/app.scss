@@ -1,11 +1,12 @@
 @import './bulma';
-@import 'images';
+@import 'general';
 @import 'colors';
-@import 'columns';
+@import 'layout';
 @import 'gradients';
 @import './components/header';
 @import './components/footer';
 @import './components/image-slider.scss';
+@import './components/image-crossfade.scss';
 @import './pages/home';
 @import './pages/about';
 
@@ -13,10 +14,6 @@
 html,
 body {
   font-family: $family-primary;
-}
-
-.page-container {
-  min-height: 100vh;
 }
 
 // DEBUG STUFF

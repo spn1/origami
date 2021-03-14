@@ -73,7 +73,7 @@ export default () => {
                 <h1 className='title'>Profile</h1>
                 <hr />
                 {profile.map((paragraph, index) => {
-                  return (<p key={index}>{paragraph}</p>);
+                  return (<p key={index} className='is-size-5 is-size-6-touch'>{paragraph}</p>);
                 })}
               </div>
             </Card>
@@ -84,8 +84,9 @@ export default () => {
               {experience.map((job, index) => {
                 return (
                   <Media key={index} side={{ imgSrc: job.iconPath }} head={{title: job.title, titleExtra: job.aside, subtitle: job.employer}}>
+                    {job.description ? <p key={index} className='is-size-5 is-size-6-touch'>{job.description}</p> : null}
                     <ul>
-                      {job.roles.map((role, index) => ( <li key={index}>{role}</li>))}
+                      {job.roles.map((role, index) => ( <li key={index} className='is-size-5 is-size-6-touch mt-0'>{role}</li>))}
                     </ul>
                   </Media>
                 );

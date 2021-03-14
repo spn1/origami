@@ -1,0 +1,10 @@
+.crossfade-image {
+    height: 140px;
+    width: 140px;
+
+    @include until($tablet) {
+        left: 0;
+        right: 0;
+        margin: auto
+    }
+}
