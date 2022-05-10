@@ -11,7 +11,7 @@ export default () => {
   return (
     <Fragment>
       <PageHead {...headerProps} />
-      <section className='section'>
+      <section className='section page-container'>
         <div className='container'>
           <h1 className='is-size-1'>Passwordle</h1>
           <Passwordle />

@@ -16,7 +16,7 @@ const techImages = [
   '/images/cpp-icon.svg',
 ];
 
-export default () => {
+const Home = () => {
   return (
     <Fragment>
       <PageHead {...headerProps} />
@@ -74,3 +74,5 @@ export default () => {
     </Fragment >
   );
 };
+
+export default Home;

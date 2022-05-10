@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTransition, animated, config } from 'react-spring';
 
-export default ({ images, interval = 2000, classNames }) => {
+const ImageCrossfade = ({ images, interval = 2000, classNames }) => {
   const [index, setIndex] = useState(0);
   const transitions = useTransition(images[index], item => item, {
     from: { position: 'absolute', opacity: 0 },
@@ -21,3 +21,5 @@ export default ({ images, interval = 2000, classNames }) => {
       />
   ));
 };
+
+export default ImageCrossfade;
