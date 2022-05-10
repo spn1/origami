@@ -43,14 +43,14 @@ const Passwordle = () => {
                 <input className= 'input' name='password' type='password' input='password' onChange={({ target: { value, name }}) => dispatchForm({ name, value })} required></input>
               </div>
             </div>
-            <div className='field'>
+            <div className='field passwordle-result'>
               {result.map((char, index) => (
-                <span className='anim fade-in-bottom' key={index}>{char}</span>
+                <span className={`fade-in-bottom--delay-${index + 1}`} key={index}>{char}</span>
               ))}
             </div>
             <div className='field'>
               <div className='control'>
-                <button className='button is-primary anim fade-in-bottom' type='submit'>Submit</button>
+                <button className='button is-primary fade-in-bottom' type='submit'>Submit</button>
               </div>
             </div>
           </form>
