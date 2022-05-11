@@ -1,5 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import axios from 'axios';
+import classnames from 'classnames';
 
 const formReducer = (state, payload) => {
     const { value, name } = payload;
@@ -9,54 +10,82 @@ const formReducer = (state, payload) => {
     };
 };
 
+const Field = ({ label, htmlFor, name, type, input, onChange, isSuccessful, required, placeholder }) => {
+  return (
+    <div className='field'>
+      <label className='label' htmlFor={htmlFor}>{label}</label>
+      <Input name={name} input={input} type={type} onChange={onChange} placeholder={placeholder} isSuccessful={isSuccessful} required={required}/>
+    </div>
+  );
+};
+
+const Input = ({ name, type, input, onChange, isSuccessful, required, placeholder }) => {
+  const classes = classnames(
+    'input', { 'is-success': isSuccessful, 'is-danger': isSuccessful === false }
+  );
+
+  return (
+    <div className='control'>
+      <input className={classes} name={name} type={type} input={input} onChange={onChange} placeholder={placeholder} disabled={isSuccessful} required={required}></input>
+    </div>
+  );
+};
+
 const Passwordle = () => {
     const [formData, dispatchForm] = useReducer(formReducer, { username: 'admin' });
-    const [isLoading, setIsLoading] = useState(false);
-    const [successful, setSuccessful] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+    const [successful, setSuccessful] = useState(undefined);
     const [lettersUsed, setLettersUsed] = useState([]);
     const [result, setResult] = useState([]);
+
+    const formUpdate = ({ target: { value, name }}) => dispatchForm({ name, value });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setResult([]);
-        setIsLoading(true);
+        setLoading(true);
 
-        const { data } = await axios.post('/api/passwordle-login', formData);
-        const { success, lettersUsed: currentLettersUsed, result: currentResult } = data;
+        try {
+          const { data } = await axios.post('/api/passwordle-login', formData);
+          const { success, lettersUsed: currentLettersUsed, result: currentResult } = data;
 
-        setIsLoading(false);
-        setSuccessful(success);
-        setLettersUsed(currentLettersUsed);
-        setResult(currentResult);
+          setLoading(false);
+          setSuccessful(success);
+          setError(false);
+          setLettersUsed(currentLettersUsed);
+          setResult(currentResult);
+        } catch (e) {
+          console.log('Error logging in');
+
+          setLoading(false);
+          setSuccessful(false);
+          setError(true);
+          setLettersUsed([]);
+          setResult([]);
+        }
     };
 
     return (
       <div className='columns'>
         <div className='column is-half'>
-          <form method='post' onSubmit={handleSubmit}>
-            <div className='field'>
-              <label className='label' htmlFor='username'>Username</label>
-              <div className='control'>
-                <input className= 'input' name='username' input='username' onChange={({ target: { value, name }}) => dispatchForm({ name, value })} placeholder='admin' disabled={successful} required></input>
-              </div>
-            </div>
-            <div className='field'>
-              <label className='label' htmlFor='password'>Password</label>
-              <div className='control'>
-                <input className= 'input' name='password' type='password' input='password' onChange={({ target: { value, name }}) => dispatchForm({ name, value })} disabled={successful} required></input>
-              </div>
-            </div>
-            <div className='field passwordle-result'>
-              {result.map((char, index) => (
-                <span className={`fade-in-bottom--delay-${index + 1}`} key={index}>{char}</span>
+          <div className='box'>
+            <form method='post' onSubmit={handleSubmit}>
+              <Field label='Username' htmlFor='username' name='username' input='username' onChange={formUpdate} placeholder='spencer' isSuccessful={successful} isError={error} required/>
+              <Field label='Password' htmlFor='password' name='password' input='password' type='password' onChange={formUpdate} placeholder='password' isSuccessful={successful} isError={error} required/>
+              <div className='field passwordle-result'>
+                {result.map((char, index) => (
+                  <span className={`fade-in--delay-${index + 1}`} key={index}>{char}</span>
               ))}
-            </div>
-            <div className='field'>
-              <div className='control'>
-                <button className={`button is-primary ${isLoading && 'is-loading'}`} type='submit'>Submit</button>
               </div>
-            </div>
-          </form>
+              <div className='field is-grouped'>
+                <div className='control is-flex'>
+                  <button className={`button mr-2 is-primary ${loading && 'is-loading'}`} type='submit' disabled={successful}>Submit</button>
+                  {successful && <span className='fade-in-right block is-size-4 is-primary'>Success!</span>}
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div className='column is-half'>
           <p className='block'>
