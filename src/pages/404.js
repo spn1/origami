@@ -8,18 +8,16 @@ const headerProps = {
 };
 
 const dogImages = [
-  '/images/merry-1.jpg',
-  '/images/merry-2.jpg',
-  '/images/merry-and-pippin-1.jpg',
-  '/images/merry-3.jpg',
-  '/images/merry-4.jpg',
-  // '/images/pippin-1.jpg',
-  '/images/merry-and-pippin-2.jpg',
-  '/images/merry-5.jpg',
-  '/images/merry-6.jpg',
-  // '/images/pippin-2.jpg',
-  '/images/merry-7.jpg',
-  '/images/merry-and-pippin-3.jpg'
+  '/images/dog-1.jpg',
+  '/images/dog-2.jpg',
+  '/images/dogs-1.jpg',
+  '/images/dog-3.jpg',
+  '/images/dog-4.jpg',
+  '/images/dogs-2.jpg',
+  '/images/dog-5.jpg',
+  '/images/dog-6.jpg',
+  '/images/dog-7.jpg',
+  '/images/dogs-3.jpg'
 ];
 
 export default () => {

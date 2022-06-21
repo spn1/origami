@@ -53,6 +53,7 @@ export default () => {
           <div className='navbar-end'>
             <NavbarItem href='/about' text='about' onClick={linkOnClick}/>
             <NavbarItem href='/portfolio' text='portfolio' onClick={linkOnClick}/>
+            <NavbarItem href='/bad-ui' text='bad-ui' onClick={linkOnClick}/>
           </div>
         </div>
       </div>
