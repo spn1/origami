@@ -56,8 +56,6 @@ const Passwordle = () => {
           setLettersUsed(currentLettersUsed);
           setResult(currentResult);
         } catch (e) {
-          console.log('Error logging in');
-
           setLoading(false);
           setSuccessful(false);
           setError(true);
