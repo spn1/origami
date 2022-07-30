@@ -1,13 +1,14 @@
-const users = [
-    {
-        name: 'spencer',
-        pw: 'hunter'
-    }
-];
+import prisma from '../../lib/prisma';
 
 const CORRECT = '🟩';
 const WRONG_POSITION = '🟨';
 const INCORRECT = '🟥';
+
+const getUser = async (username) => {
+    return await prisma.user.findUnique({
+        where: { username },
+    });
+};
 
 const getWordleResult = (guess = '', password) => {
     // If guess === password, return success
@@ -44,16 +45,17 @@ const getWordleResult = (guess = '', password) => {
 };
 
 
-const handler = (req, res) => {
+const handler = async (req, res) => {
     try {
-        const { username, password } = req.body;
-        const user = users.find(({ name }) => name === username);
+        const { username, password: guess } = req.body;
+        // const user = users.find(({ name }) => name === username);
+        const user = await getUser(username);
 
         if (!user) {
             res.status(404).json('User Not Found');
         } else {
-            const { pw } = user;
-            const result = getWordleResult(password, pw);
+            const { password } = user;
+            const result = getWordleResult(guess, password);
             res.status(200).json(result);
         }
     } catch (e) {

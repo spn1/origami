@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+
 import PageHead from '../../components/page-head';
 import Passwordle from '../../components/passwordle';
 
