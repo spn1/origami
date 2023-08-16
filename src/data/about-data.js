@@ -9,10 +9,11 @@ export const data = {
         skills: {
             'Recent': [
                 'React, Node, Javascript',
-                'HTML, CSS, SASS',
+                'GraphQL, Typescript',
+                'HTML, CSS, SASS, Styled Components',
                 'SQL, MongoDB, Unix',
                 'CMS Systems (Content Stack)',
-                'CI / CD Systems (Heroku, Team City)',
+                'CI / CD Systems (Heroku, Team City, Octopus, Concourse)',
                 'PaaS Systems (Cloud Foundry)'
             ],
             'History': [
@@ -22,41 +23,52 @@ export const data = {
         },
         interests: {
             'Professional': [
-                'Artificial Intelligence',
+                'Fullstack Web Development',
                 'Graphics Programming',
                 'Game Development',
                 'Game Design'
             ],
             'Personal': [
                 'Video Games',
-                'Music (Drumming & Piano)',
                 'Reading',
                 'Bouldering',
                 'Jogging',
-                'Calisthenics'
+                'Hiking',
             ]
         }
     },
     main: {
         profile: [
-            'A highly focused and dedicated Master of Physics and Computer Science graduate (2:1) with skills in programming, maths, and physics. Has an analytical and logical way of thinking, enjoys the aspect of problem-solving with others using modern technology, and is keen to apply new development techniques in real-world applications. Started career employed at Credit Suisse in Switzerland, developing complex financial software to handle accounts and loans for UHNWI. Currently employed as a Web Developer at Sky, developing web applications to help customers troubleshoot their issues digitally instead of through call centers.',
-            'Pursues interest in programming to create applications as a hobby, including video games. In the past has developed a mobile-based castle-defence game using Unity and C# with friends from University. Assisted in building a small planetary rover for the physics department at university, which was used to test space mission instrumentation such as camera systems and robotic arms. Has used specialist knowledge in both programming and physics to plan and complete complex tasks with others, such as to undertake physics experiments and develop software.'
+            'A highly focused and dedicated Software Engineer, with a Masters Degree in Physics and Computer Science, and 5+ years experience working in software engineering teams. Has an analytical and logical way of thinking, enjoys the aspect of problem-solving with others using modern technology, and is keen to apply modern technology in real-world applications.',
+            'Started career employed at Credit Suisse in Switzerland, developing complex financial software to handle accounts and loans for UHNWI. Currently employed as a Senior Software Engineer at Sky. Initial role involved developing web applications to help customers troubleshoot their issues digitally instead of through call centers,  and later moved into a Senior Software Engineering role to lead the delivery of product settings journeys for Sky&apos;s commercial products.'
         ]
     },
     experience: [
         {
             iconPath: '/icons/sky-logo-small-rgb-128x128.png',
+            title: 'Senior Software Engineer',
+            employer: 'Sky',
+            aside: '2022 - Present',
+            description: 'Moved into a senior position to lead a different team that worked on various product settings journeys for sky.com',
+            roles: [
+                'Led the development of a series of product settings journeys for a brand new sky product.',
+                'Set up a stubbing framework to facilitate API mocking for this new product, when the external APIs couldn’t be utilized in a development environment.',
+                'Organized the implementation of automation testing into the team.',
+                'Collaborated with business analysts and product owners to analyze requirements, refine tickets, and deliver frequent application updates.'
+            ]
+        },
+        {
+            iconPath: '/icons/sky-logo-small-rgb-128x128.png',
             title: 'Web Developer',
             employer: 'Sky',
-            aside: '2018 - Present',
-            description: '',
+            aside: '2018 - 2022',
+            description: 'Front end web developer using Javascript, React, and Node. Developed and maintained the main hub for content to help both customers and call-center agents diagnose and fix issues.',
             roles: [
-                'Full stack web development with React, Node, Javascript.',
-                'Developed systems to aid a variety of different internal users within Sky in accessing help content and performing their role.',
-                'Implemented employee authentication for said internal users with Microsoft Azure Active Directory.',
-                'Developed REST APIs to store internal users details using postgresql (e.g. news notifications, bookmarks, survey results).',
-                'Worked in an Agile environment across multiple teams (Scrum / Kanban).',
-                'Relied upon to investigate and solve production issues and bugs.'
+                'Collaborated with other developers to implement features for the Sky customer help website. Included maintaining some back-end services to facilitate the web application.',
+                'Worked to deadlines using agile methodologies (scrum and kanban).',
+                'Helped investigate and fix bugs within the application, including responding to high priority incidents.',
+                'Presented new features to the wider department to showcase progress of large projects.',
+                'In self-development time, developed a custom tool to help content editors search for content in a more refined way.'
             ]
         },
         {
