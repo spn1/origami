@@ -53,17 +53,13 @@ const Home = () => {
 
               <div className='columns is-vcentered is-centered pt-4'>
                 <div className='column is-half'>
-                  <Link href='/about'>
-                    <a className='has-text-light has-text-weight-medium is-3'>
-                      &lt; Find out more
-                    </a>
+                  <Link href='/about' className='has-text-light has-text-weight-medium is-3'>
+                    &lt; Find out more
                   </Link>
                 </div>
                 <div className='column is-half has-text-right'>
-                  <Link href='/portfolio'>
-                    <a className='has-text-light has-text-weight-medium is-3'>
-                      See what I&apos;ve created &gt;
-                    </a>
+                  <Link href='/portfolio' className='has-text-light has-text-weight-medium is-3'>
+                    See what I&apos;ve created &gt;
                   </Link>
                 </div>
               </div>

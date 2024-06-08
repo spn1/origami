@@ -6,17 +6,15 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 const NavbarIcon = ({ href, icon }) => (
   <div className='navbar-item'>
     <Link href={href}>
-      <a>
-        <Icon icon={icon} size='lg' />
-      </a>
+      <Icon icon={icon} size='lg' />
     </Link>
   </div>
 );
 
 const NavbarItem = ({ href, text, onClick }) => (
   <div className='navbar-item is-uppercase has-text-weight-bold'>
-    <Link href={href}>
-      <a className='has-text-light' onClick={onClick}>{text}</a>
+    <Link href={href} className='has-text-light' onClick={onClick}>
+      {text}
     </Link>
   </div>
 );

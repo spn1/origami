@@ -20,7 +20,7 @@ const transitionStyles = {
     exited: { color: 'blue' }
 };
 
-const Animated = ({ images, interval, in: inProp, children }) => {9;
+const Animated = ({ in: inProp, children }) => {9;
     return (
       <Transition
         in={inProp}

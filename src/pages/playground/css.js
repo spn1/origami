@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react';
 import PageHead from '../../components/page-head';
 
-import Link from 'next/link';
-
 const headerProps = {
   title: 'CSS Playground',
   description: 'CSS Playground'
