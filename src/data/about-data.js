@@ -8,17 +8,16 @@ export const data = {
         },
         skills: {
             'Recent': [
-                'React, Node, Javascript',
-                'GraphQL, Typescript',
-                'HTML, CSS, SASS, Styled Components',
-                'SQL, MongoDB, Unix',
+                'React, Node, Javascript, Typescript, GraphQL',
+                'HTML, CSS, SASS, Styled Components, Tailwind',
+                'SQL, MongoDB, Linux, Docker',
                 'CMS Systems (Content Stack)',
                 'CI / CD Systems (Heroku, Team City, Octopus, Concourse)',
                 'PaaS Systems (Cloud Foundry)'
             ],
             'History': [
                 'C#, .Net, Unity',
-                'C, C++, Java'
+                'C, C++, Java, Python',
             ]
         },
         interests: {
@@ -39,8 +38,8 @@ export const data = {
     },
     main: {
         profile: [
-            'A highly focused and dedicated Software Engineer, with a Masters Degree in Physics and Computer Science, and 5+ years experience working in software engineering teams. Has an analytical and logical way of thinking, enjoys the aspect of problem-solving with others using modern technology, and is keen to apply modern technology in real-world applications.',
-            'Started career employed at Credit Suisse in Switzerland, developing complex financial software to handle accounts and loans for UHNWI. Currently employed as a Senior Software Engineer at Sky. Initial role involved developing web applications to help customers troubleshoot their issues digitally instead of through call centers,  and later moved into a Senior Software Engineering role to lead the delivery of product settings journeys for Sky&apos;s commercial products.'
+            'A highly focused and dedicated Software Engineer, with a Masters Degree in Physics and Computer Science and 5+ years experience working in software engineering teams. Has an analytical and logical way of thinking, enjoys the aspect of problem-solving with others using modern technology, and is keen to apply modern technology in real-world applications.',
+            'Experienced in working on a variety of application domains, including maintaining complex financial software to handle accounts and loans for UHNWI at Credit Suisse, and developing web applications to help customers troubleshoot their issues digitally instead of through call centers at Sky. Later moved into a Senior Software Engineering role to lead the delivery of product settings journeys for Sky&apos;s commercial products and to help develop a new billing page for Sky Mobile.'
         ]
     },
     experience: [
@@ -51,10 +50,12 @@ export const data = {
             aside: '2022 - Present',
             description: 'Moved into a senior position to lead a different team that worked on various product settings journeys for sky.com',
             roles: [
-                'Led the development of a series of product settings journeys for a brand new sky product.',
-                'Set up a stubbing framework to facilitate API mocking for this new product, when the external APIs couldn’t be utilized in a development environment.',
+                'Led the development of a series of product settings journeys for a brand new Sky product, working with teams in America and India.',
+                'Collaborated with engineers in other teams in setting up a stubbing framework to facilitate API mocking for this new product, as the external APIs couldn’t be utilized in a development environment.',
                 'Organized the implementation of automation testing into the team.',
-                'Collaborated with business analysts and product owners to analyze requirements, refine tickets, and deliver frequent application updates.'
+                'Collaborated with business analysts and product owners to analyze requirements, refine tickets, and deliver frequent application updates.',
+                'Mentored other junior engineers in the team on software development best practices.',
+                'Assisted in developing a new billing page for Sky mobile customers.'
             ]
         },
         {
