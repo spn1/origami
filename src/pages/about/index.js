@@ -14,7 +14,7 @@ export default () => {
   const { aside: { avatar, skills, interests }, main: { profile }, experience } = data;
 
   return (
-    <Fragment>
+    <div className='about'>
       <PageHead {...headerProps} />
       <div className='container p-3'>
 
@@ -95,6 +95,6 @@ export default () => {
           </div>
         </div>
       </div>
-    </Fragment >
+    </div >
   );
 };

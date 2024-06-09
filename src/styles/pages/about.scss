@@ -1,17 +1,12 @@
 .about {
+    @include theme-gradient();
+
     hr {
         margin: 0.5rem 0;
     }
 
     .box {
-        border-radius: 0px;
-    }
-
-    .title {
-        margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-        margin-bottom: 0.5rem;
+        background-color: $theme-color-3;
+        color: $light;
     }
 }

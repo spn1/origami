@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 export default ({ children, noPadding }) => {
   const classes = classnames(
-    'box card',
+    'box card has-text-light',
     {
       'p-0': noPadding
     }

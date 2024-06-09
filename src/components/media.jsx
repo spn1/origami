@@ -6,8 +6,6 @@ export default ({ side = defaultImage, head = {}, children }) => {
   const { imgSrc } = side;
   const { title, titleExtra, subtitle } = head;
 
-  console.log(imgSrc);
-
   return (
     <article className='media'>
       <figure className='media-left is-hidden-touch'>
